@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="jquery.min.js"></script>
+    <script src="game.js"></script>
+    <title>Falling Squares</title>
+    <style>
+        #canvas {
+            border: 1px solid black;
+            cursor: none;
+        }
+        *::selection {
+            display: none;
+        }
+        #reset {
+            opacity: 0;
+        }
+        #lose {
+            opacity: 0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #lossmessage {
+            left: -500px;
+            width: 250px;
+            top: 250px;
+            position: fixed;
+            height: 250px;
+            border-radius: 5;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <p id="inst">Use your arrow keys to move; avoid the falling squares. This game requires a recent version of the <a href="http://google.com/chrome" target="_blank">Chrome Browser</a></p>
+        <canvas id="canvas" width="500" height="500"></canvas>
+        <div id="lossmessage">
+            <h1 id="lossmessagetext">You lost!</h1>
+        </div>
+        <br>
+        <br>
+        <p id="score"></p>
+        <input type="button" id="reset" value="Reset" onclick="reset()">
+        <br>
+        <h1 id="lose"></h1>
+    </center>
+</body>
+
+</html>
