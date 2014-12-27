@@ -1,4 +1,4 @@
-// main Falling Squares game script
+// main Falling Squares game script file
 $(document).ready(init); // functions init
 var x = 240,
     y = 450,
