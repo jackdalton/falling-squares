@@ -48,7 +48,7 @@ function scoreLoop() { // score loop
     setTimeout(scoreLoop, 250);
 }
 function reset() { // reset button
-    window.location.assign("http://html5.jackdalton.co");
+    window.location.assign(String(window.location));
 }
 function lose() { // loss function
     $("#reset").fadeTo("slow", 1);
